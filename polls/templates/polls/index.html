@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>this is index html pages please customize later...</h1>
+    <p>
+        <ol>
+            {% for questions in question %}
+            <li><a href="{% url 'polls:detail' questions.id %}">{{  questions.question_text }}</a></li>
+            {% endfor %}
+        </ol>
+    </p>
+</body>
+
+</html>
